@@ -7,7 +7,8 @@ export const Nav = styled.div`
   position: sticky;
   top: 0;
   padding: 12px 0;
-  height: 70px;
+  height: 68px;
+  width: 100%;
   z-index: 999;
   background-color: rgb(9, 28, 41);
   color: #fff;

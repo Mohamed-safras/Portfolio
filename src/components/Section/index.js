@@ -15,6 +15,7 @@ import {
   Span,
 } from "../../components/Section/style";
 import content from "../../content";
+
 const Section = () => {
   return (
     <SectionContainer id={"section"}>
