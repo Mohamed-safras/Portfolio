@@ -1,25 +1,25 @@
 export const stack = [
   {
     id: 1,
-    img: process.env.PUBLIC_URL + "/assets/mongo.png",
+    img: "https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg",
     alt: "mongodb",
     bounce: true,
   },
   {
     id: 2,
-    img: process.env.PUBLIC_URL + "/logo512.png",
+    img: "https://beginner-portfolio.netlify.app/logo512.png",
     alt: "react",
     bounce: false,
   },
   {
     id: 3,
-    img: process.env.PUBLIC_URL + "/assets/express.png",
+    img: "https://beginner-portfolio.netlify.app/assets/express.png",
     alt: "express",
     bounce: true,
   },
   {
     id: 4,
-    img: process.env.PUBLIC_URL + "/assets/node.png",
+    img: "https://beginner-portfolio.netlify.app/assets/node.png",
     alt: "node",
     bounce: false,
   },

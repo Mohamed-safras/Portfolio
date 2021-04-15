@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 
 import Typical from "react-typical";
 import {
@@ -17,15 +19,22 @@ import {
 import content from "../../content";
 
 const Section = () => {
+  const [isLoaded, setIsLoaded] = useState(true);
+
+  useEffect(() => {
+    setIsLoaded(isLoaded);
+  }, []);
   return (
     <SectionContainer id={"section"}>
       <SectionContainerBody>
         <SectionContainerBodyContainerLeft>
           <SectionDetials>
-            <SectionDetialsh1>{content.header.text[0]}</SectionDetialsh1>
+            <SectionDetialsh1 isLoaded={isLoaded}>
+              {content.header.text[0]}
+            </SectionDetialsh1>
             <SectionDetialsh1>{content.header.text[1]}</SectionDetialsh1>
-            <SectionDetialsh2>
-              <Span1>{content.header.text[2]} </Span1>{" "}
+            <SectionDetialsh2 isLoaded={isLoaded}>
+              <Span1>{content.header.text[2]} </Span1>
               <Span>
                 <Typical
                   steps={[

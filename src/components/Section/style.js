@@ -24,6 +24,7 @@ export const SectionContainerBody = styled.div`
     margin-top: 30px;
     height: 100%;
     text-align: center;
+    margin-top: -70px;
   }
 `;
 
@@ -76,6 +77,7 @@ export const Image = styled.img`
 
 export const SectionDetials = styled.div`
   padding: 10px;
+  cursor: pointer;
 `;
 
 export const Button = styled(LinkS)`
@@ -123,7 +125,20 @@ export const SectionDetialsh1 = styled.h1`
   font-size: 4rem;
   margin-bottom: 10px;
   font-weight: bold;
+  animation: ${({ isLoaded }) => (isLoaded ? "bounce" : "refloat")} 4s
+    ease-in-out;
 
+  @keyframes refloat {
+    0%,
+    100% {
+      transform: translateY(50%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
   @media screen and (max-width: 1000px) {
     font-size: 1.8rem;
   }
@@ -154,6 +169,8 @@ export const SectionDetialsh2 = styled.h2`
   margin-top: 10px;
   color: #cbd5e0;
   line-height: 1.5;
+
+  animation: ${({ isLoaded }) => (isLoaded ? "bounce" : "null")} 2s linear;
 
   @media screen and (min-width: 900px) {
     font-size: 2rem;

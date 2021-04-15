@@ -13,7 +13,6 @@ export const StackContainers = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* margin-top: 10px; */
   height: 100vh;
   max-width: 100%;
   margin-left: auto;
@@ -22,8 +21,20 @@ export const StackContainers = styled.div`
   @media screen and (max-width: 1026px) {
     height: 100vh;
   }
+  @media screen and (max-width: 830px) {
+    height: 100%;
+  }
+  @media screen and (max-width: 820px) {
+    height: 100%;
+  }
   @media screen and (max-width: 768px) {
     height: 100vh;
+  }
+  @media screen and (max-width: 750px) {
+    height: 100%;
+  }
+  @media screen and (max-width: 650px) {
+    height: 100%;
   }
   @media screen and (max-width: 450px) {
     height: 100%;
@@ -62,7 +73,7 @@ export const Stacks = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0;
   }
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 750px) {
     grid-template-columns: 1fr 1fr;
     padding: 0;
   }
@@ -82,7 +93,7 @@ export const Image = styled.img`
   object-fit: contain;
   border-radius: 999px;
   background: #fff;
-  padding: 0px;
+  padding: 10px;
   box-shadow: 1px 5px 7px -9px rgba(255, 255, 255, 0.9);
   animation: ${({ bounce }) => (bounce ? "bounce" : "refloat")} 3s infinite;
 
@@ -108,9 +119,9 @@ export const Image = styled.img`
       animation-timing-function: ease-in-out;
     }
   }
-  @media screen and (max-width: 786px) {
-    width: 160px;
-    height: 160px;
+  @media screen and (max-width: 780px) {
+    width: 150px;
+    height: 150px;
   }
   @media screen and (max-width: 300px) {
     width: 160px;
